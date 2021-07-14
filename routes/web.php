@@ -63,9 +63,5 @@ Route::get('/geoip', function(){
     $geoipInfo = geoip()->getLocation('95.29.44.200');
     return $geoipInfo->toArray();
 });
-Route::get('/geo-district', function(){
-    $deoDistrict = geoip()->getLocation('95.29.44.200');
-    return $geoipInfo->toArray();
-});
 
 Route::get('/geo-district', [GeoDistrictController::class,'district'])->name('geo-district');
