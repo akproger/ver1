@@ -15,7 +15,7 @@ class CreateGeoDistrictsTable extends Migration
     {
         Schema::create('geo_districts', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('name');
         });
     }
 
