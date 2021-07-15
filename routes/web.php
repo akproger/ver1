@@ -65,3 +65,4 @@ Route::get('/geoip', function(){
 });
 
 Route::get('/geo-district', [GeoDistrictController::class,'district'])->name('geo-district');
+Route::get('/geo-region', [GeoRegionController::class,'region'])->name('geo-region');
