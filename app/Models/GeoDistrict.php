@@ -9,4 +9,5 @@ class GeoDistrict extends Model
 {
     use HasFactory;
     protected $table = 'geo_district';
+
 }

@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\GeoCityController;
 use App\Http\Controllers\GeoDistrictController;
+use App\Http\Controllers\GeoRegionController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Gate;
 use App\Http\Controllers\NewAdsController;
@@ -66,3 +68,4 @@ Route::get('/geoip', function(){
 
 Route::get('/geo-district', [GeoDistrictController::class,'district'])->name('geo-district');
 Route::get('/geo-region', [GeoRegionController::class,'region'])->name('geo-region');
+Route::get('/geo-city', [GeoCityController::class,'city'])->name('geo-city');

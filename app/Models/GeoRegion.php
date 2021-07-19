@@ -9,4 +9,9 @@ class GeoRegion extends Model
 {
     use HasFactory;
     protected $table = 'geo_regions';
+
+    public function districts(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(GeoDistrict::class);
+    }
 }
